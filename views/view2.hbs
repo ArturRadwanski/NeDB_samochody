@@ -1,0 +1,54 @@
+<h1>Edycja dokumentu</h1>
+<form method="GET">
+    <table class="tb">
+        <tr class="tr">
+            <td class="td">ubezpieczony</td>
+            <td class="td">benzyna</td>
+            <td class="td">uszkodzony</td>
+            <td class="td">napęd 4x4</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">
+                <select name="one">
+                    <option value="TAK">TAK</option>
+                    <option value="NIE">NIE</option>
+                    <option value="BRAK DANYCH">BRAK DANYCH</option>
+                </select>
+            </td>
+            <td class="td">
+                <select name="two">
+                    <option value="TAK">TAK</option>
+                    <option value="NIE">NIE</option>
+                    <option value="BRAK DANYCH">BRAK DANYCH</option>
+                </select>
+            </td>
+            <td class="td">
+                <select name="three">
+                    <option value="TAK">TAK</option>
+                    <option value="NIE">NIE</option>
+                    <option value="BRAK DANYCH">BRAK DANYCH</option>
+                </select>
+            </td>
+            <td class="td">
+                <select name="four">
+                    <option value="TAK">TAK</option>
+                    <option value="NIE">NIE</option>
+                    <option value="BRAK DANYCH">BRAK DANYCH</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+    {{#each a}}
+    <!--<input type="hidden" name="id" value={{this._id}}>-->
+    <button type="submit" value={{this.row}} name="row" formaction="editconfirm" class="conf">confirm</button>
+    <button type="submit" formaction="cancel" class="del">cancel</button>
+
+    {{/each}}
+</form>

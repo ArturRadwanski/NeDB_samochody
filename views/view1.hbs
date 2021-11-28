@@ -1,0 +1,40 @@
+<form method="GET" class="form" onsubmit="return conf()" id="form1"></form>
+<form method="GET">
+    <table class="tablecheck">
+    <tr class="tr"><td class="td">ubezpieczony:</td><td class="td"><input type="checkbox" name="one" value="TAK" class="check"></td></tr>
+    <tr class="tr"><td class="td">benzyna:</td><td class="td"><input type="checkbox" name="two" value="TAK" class="check"></td></tr>
+    <tr class="tr"><td class="td">uszkodzony:</td><td class="td"><input type="checkbox" name="three" value="TAK" class="check"></td></tr>
+    <tr class="tr"><td class="td">naped 4x4:</td><td class="td"><input type="checkbox" name="four" value="TAK" class="check"></td></tr>
+    </table>
+    <input type="submit" formaction="handleform" value="Dodaj do bazy" class="subBt">
+
+   <table class="table">
+    <tr class="tr">
+        <th class="td">ubezpieczony</th>
+        <th class="td">benzyna</th>
+        <th class="td">uszkodzony</th>
+        <th class="td">naped 4x4</th>
+    </tr>
+    {{#each a}}
+        <tr class="tr">
+            <td class="td">{{this.one}}</td>
+            <td class="td">{{this.two}}</td>
+            <td class="td">{{this.three}}</td>
+            <td class="td">{{this.four}}</td>
+            <td class="td"><button type="submit" formaction="Edit" value="{{this.row}}" name="btedit" class="edit">Edit</button></td>
+            <td class="td"><button formaction="Del" value="{{this.row}}" name="row" type="submit" form="form1" class="del">Delete</button></td>
+        </tr>
+    {{/each}}
+</table>
+</form>
+<script type="text/javascript">
+    function conf(){
+        
+        return confirm("Czy aby na pewno?")   
+    }
+</script>
+
+
+<style>
+   
+</style>

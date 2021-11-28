@@ -1,0 +1,81 @@
+.tablecheck{
+    border-collapse: collapse;
+    width: 30vw;
+    height:50vh;
+}
+.td{
+    border: 2px black solid;
+    text-align: center;
+}
+table.tablecheck > tbody > tr > td{
+    color:blue;
+    font-weight: bolder;
+    font-size: 5vh;
+}
+.check{
+    width:25px;
+    height:25px;
+}
+.subBt{
+    margin:15px 0;
+    display: block;
+    background-color: white;
+    border: 2px blue solid;
+    border-radius: 5px;
+    color:blue;
+    font-weight: bold;
+    width:30vw;
+    height:5vh;
+}
+.subBt:hover, .edit:hover{
+    color:#7777FF;
+    background-color: lightgray;
+    border-color: #7777FF;
+
+}
+.table{
+    border-collapse: collapse;
+    position:absolute;
+    right:5vw;
+    top:40px;
+}
+.table > tbody > tr > th, .table > tbody > tr > td{
+    
+    width: 8vw;
+    height:5vh;
+}
+.edit{
+    background-color: white;
+    border: 2px blue solid;
+    border-radius: 5px;
+    color:blue;
+    font-weight: bold;
+}
+.del{
+    background-color: white;
+    border: 2px red solid;
+    border-radius: 5px;
+    color:red;
+    font-weight: bold;
+}
+.del:hover{
+    background-color: lightgray;
+    border: 2px #FF7777 solid;
+    color:#FF7777;
+}
+.conf{
+    background-color: white;
+    border: 2px lime solid;
+    border-radius: 5px;
+    color:lime;
+    font-weight: bold;
+}
+.conf:hover{
+    background-color: lightgray;
+    border: 2px green solid;
+    color:green;
+}
+
+.tb{
+    border-collapse: collapse;
+}

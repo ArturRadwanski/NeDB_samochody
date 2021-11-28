@@ -1,0 +1,7 @@
+{"one":"NIE","two":"TAK","three":"NIE","four":"NIE","row":0,"_id":"kf3HhTbvoKKVQeaP"}
+{"one":"NIE","two":"NIE","three":"NIE","four":"TAK","row":1,"_id":"uXoVrkr3zdi9hyRe"}
+{"$$deleted":true,"_id":"kf3HhTbvoKKVQeaP"}
+{"$$deleted":true,"_id":"uXoVrkr3zdi9hyRe"}
+{"one":"TAK","two":"NIE","three":"NIE","four":"NIE","row":0,"_id":"daQ0eT2LD7UD9e6h"}
+{"one":"TAK","two":"TAK","three":"TAK","four":"NIE","row":1,"_id":"bbtJZZ14BZfzGU0b"}
+{"one":"NIE","two":"BRAK DANYCH","three":"TAK","four":"TAK","row":0,"_id":"daQ0eT2LD7UD9e6h"}
